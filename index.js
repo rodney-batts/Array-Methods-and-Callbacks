@@ -53,15 +53,15 @@ Use the higher-order function called getYears to do the following:
 2. Receive a callback function getFinals from task 2 
 3. Return an array called years containing all of the years in the getFinals data set*/
 
-function getYears(/* code here */ getFinals, fifaData, ) {
-    /* code here */ 
+function getYears(/* code here */ getFinals, finals, ) {
+    /* code here */
+    getFinals();
     const years = [];
-    fifaData.forEach(years){
-        getFinals();
-        years.push(fifaData[0]);
-    };
-    };
-}
+    finals.forEach(element)  => years.push(finals.map(finals[0]));
+         
+       return years;}
+        
+
 
 
 
