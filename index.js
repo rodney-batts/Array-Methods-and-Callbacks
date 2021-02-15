@@ -14,7 +14,22 @@ Practice accessing data by console.log-ing the following pieces of data note, yo
 //(d) Away Team goals for 2014 world cup final
 
 //(e) Winner of 2014 world cup final */
+let final2014 = fifaData.filter((Year, Stage)=> {(Year === 2014)&&(Stage ==="Final")});
+    console.log("Home Team: "+ final2014[5]+ "for 2014 World Cup Final");
 
+   // let final2014 = fifaData.filter((Year, Stage)=> {(Year === 2014)&&(Stage ==="Final")});
+    console.log("Away Team: "+ final2014[8]+ "for 2014 World Cup Final");
+    
+   // let final2014 = fifaData.filter((Year, Stage)=> {(Year === 2014)&&(Stage ==="Final")});
+    console.log("Home Team Goals: "+ final2014[6]+ "for 2014 World Cup Final");
+    
+   // let final2014 = fifaData.filter((Year, Stage)=> {(Year === 2014)&&(Stage ==="Final")});
+    console.log("Away Team Goals: "+ final2014[7]+ "for 2014 World Cup Final");
+
+  //  let final2014 = fifaData.filter((Year, Stage)=> {(Year === 2014)&&(Stage ==="Final")});
+    console.log("Winner of 2014 World Cup Final: "+  (final2014[6] > final2014[7] ) ? + final2014[5]: final2014[8] + "is the winner.");
+
+ 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
