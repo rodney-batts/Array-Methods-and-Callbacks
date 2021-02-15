@@ -42,7 +42,7 @@ hint - you should be looking at the stage key inside of the objects
 function getFinals(/* code here */ fifaData) {
    /* code here */
    const finals = [];
-   return fifaData.filter(finals => fifaData[2] === "Final");
+   return finals = fifaData.filter(finals => fifaData[2] === "Final");
 }
 
 
@@ -57,7 +57,7 @@ function getYears(/* code here */ getFinals, finals, ) {
     /* code here */
     getFinals();
     const years = [];
-    finals.forEach(element)  => years.push(finals.map(finals[0]));
+    finals.forEach(element)  => finals.push(finals.map(finals[0]));
          
        return years;}
         
@@ -72,8 +72,11 @@ Use the higher-order function getWinners to do the following:
 3. Determines the winner (home or away) of each `finals` game. 
 4. Returns the names of all winning countries in an array called `winners` */ 
 
-function getWinners(/* code here */) {
+function getWinners(/* code here */ finals, getFinals) {
     /* code here */
+    const winners = [];
+  finals.forEach(element => { (finals[6] > finals[7] ) ?  winners.push(finals[5]) : winners.push(finals[8])}) ;    
+    return winners;
 }
 
 
@@ -88,8 +91,18 @@ Use the higher-order function getWinnersByYear to do the following:
 hint: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(/* code here */) {
+function getWinnersByYear(/* code here */ winners,finals, getYears, getWinners) {
     /* code here */
+    const winnersByYear = [];
+    winnersByYear = {
+        finals.forEach(element => {
+        "In ", ${years}, ${winners}, "won the world cup!"    
+         winners.push(winnersByYear)   
+        });
+                
+            }
+        }
+    
 }
 
 
@@ -104,9 +117,16 @@ Use the higher order function getAverageGoals to do the following:
  Example of invocation: getAverageGoals(getFinals(fifaData));
 */
 
-function getAverageGoals(/* code here */) {
+function getAverageGoals(/* code here */ getFinals) {
    /* code here */
-}
+   const homeReducer = (accumulatorHome, getFinals[6]) => {accumulatorHome += getFinals[6]};
+   const averageHomeGoals = math.round((homeReducer/getFinals[6])*100)/100;
+
+   const awayReducer = (accumulatorHome, getFinals[7]) => {accumulatorHome += getFinals[7]};
+   const averageAwayGoals = math.round((awayReducer/getFinals[7])*100)/100;
+   }
+   return [averageHomeGoals,averageAwayGoals];
+   
 
 
 
